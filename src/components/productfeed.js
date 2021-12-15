@@ -1,9 +1,7 @@
 import Product from "./product";
 function ProductFeed({ products }) {
   return (
-    <div>
-      <h1>Products here....</h1>
-
+    <div className="bg-gray-200 grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto">
       {products.map(({ id, title, price, description, category, image }) => (
         <Product
           key={id}

@@ -12,4 +12,13 @@
   .margin-2 {
     @apply m-2;
   }
+  .button {
+    @apply p-1 text-sm md:text-sm bg-gradient-to-b from-blue-700 to-blue-500 rounded-sm;
+  }
+  .button:focus {
+    @apply outline-none;
+  }
+  .button:hover {
+    @apply text-white to-blue-900;
+  }
 }

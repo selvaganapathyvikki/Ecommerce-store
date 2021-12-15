@@ -74,7 +74,7 @@ function Header() {
           <p className="link">Electronics</p>
           <p className="link">Computers</p>
           <p className="link hidden lg:flex">Home&Kitchen</p>
-          <p className="link hidden md:flex">Me</p>
+          <p className="link hidden md:flex">Men's</p>
           <p className="link hidden md:flex">Women's </p>
           <p className="link">Kids</p>
           <p className="link">Beauty</p>
