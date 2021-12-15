@@ -3,19 +3,19 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function banner() {
   return (
-    <div className="relative w-full lg:w-4/5 md:w-full sm:w-full h-32 mx-auto mt-2">
+    <div className="relative w-full lg:w-full md:w-full sm:w-full mx-auto mt-2">
       <Carousel
         autoPlay
         infiniteLoop
         showStatus={false}
-        showIndicators={false}
+        showIndicators={true}
         showThumbs={false}
         interval={5000}
       >
         <div>
           <img
             loading="lazy"
-            src="https://raw.githubusercontent.com/selvaganapathyvikki/image-store/main/banimg1.jpg"
+            src="https://raw.githubusercontent.com/selvaganapathyvikki/image-store/main/Banner1.png"
             alt="This is a banner image"
           />
         </div>
@@ -23,7 +23,7 @@ function banner() {
         <div>
           <img
             loading="lazy"
-            src="https://raw.githubusercontent.com/selvaganapathyvikki/image-store/main/banimg2.jpg"
+            src="https://raw.githubusercontent.com/selvaganapathyvikki/image-store/main/Banner2.png"
             alt=""
           />
         </div>
