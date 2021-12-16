@@ -25,7 +25,7 @@ function Header() {
             />
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-8 mr-2 w-6 border-black  cursor-pointer bg-white rounded-md hover:bg-black hover:text-white"
+              className="h-8 mr-1 w-6 border-black  cursor-pointer bg-white rounded-md hover:bg-black hover:text-white"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -59,11 +59,11 @@ function Header() {
                 </span>
               </a>
             </div>
-            <div className="link font-extrabold text-base ">
-              <button>SignIn</button>
+            <div className="font-extrabold text-base">
+              <button className="button-signin">SignUp</button>
             </div>
-            <div className="link font-extrabold text-base">
-              <p>Login</p>
+            <div className=" font-extrabold text-base ml-0">
+              <button className="button-login">Login</button>
             </div>
           </div>
         </div>
