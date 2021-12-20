@@ -1,6 +1,7 @@
 import Image from "next/image";
-
+import { useSession, signIn, signOut } from "next-auth/react";
 function Header() {
+  const { data: session } = useSession();
   return (
     <>
       <div className="overflow-hidden">
@@ -60,10 +61,24 @@ function Header() {
               </a>
             </div>
             <div className="font-extrabold text-base">
-              <button className="button-signin">SignUp</button>
+              {session ? (
+                <img className="user-label" src={session.user.image} />
+              ) : (
+                <button onClick={signIn} className="button-signin">
+                  SignUp
+                </button>
+              )}
             </div>
             <div className=" font-extrabold text-base ml-0">
-              <button className="button-login">Login</button>
+              {session ? (
+                <button onClick={signOut} className="button-signin">
+                  Logout
+                </button>
+              ) : (
+                <button onClick={signIn} className="button-login">
+                  Login
+                </button>
+              )}
             </div>
           </div>
         </div>

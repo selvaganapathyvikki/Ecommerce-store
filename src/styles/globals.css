@@ -27,4 +27,7 @@
   .button-login {
     @apply text-black font-bold px-2 py-1 bg-white rounded-md border-2 focus:outline-none focus:bg-gray-300;
   }
+  .user-label {
+    @apply border-white bg-white text-black rounded-3xl h-10;
+  }
 }

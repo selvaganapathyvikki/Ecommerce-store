@@ -10,7 +10,7 @@
     "@reduxjs/toolkit": "1.5.0",
     "@tailwindcss/line-clamp": "^0.2.0",
     "caniuse-lite": "^1.0.30001286",
-    "firebase": "^8.6.1",
+    "firebase": "^9.6.1",
     "firebase-admin": "^9.8.0",
     "next": "latest",
     "next-auth": "^4.0.5",
